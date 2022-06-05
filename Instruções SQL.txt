@@ -1,0 +1,37 @@
+//Conexão ao banco de dados do trabalho
+$conexao = new PDO('sqlite:dw.db');
+
+
+//Comandos de banco para as categorias
+// Buscar todas as categorias;
+SELECT * FROM categoria;
+
+// Inserir produto com as informações de nome, categoria, preço, descrição
+INSERT INTO categoria (nome) values ('$nome');
+
+// Atualizar as informações nome, categoria, preço, descrição conforme ID
+UPDATE categoria SET nome = '$nome' WHERE id = $id;
+
+// Remover o produto referente ao id
+DELETE FROM categoria WHERE id = $id;
+
+// Buscar o produto referente ao id
+SELECT * FROM categoria WHERE id = $id;
+
+
+
+//Comandos de banco para os PRODUTOS
+// Buscar todos os produtos;
+SELECT * FROM produto;
+
+// Inserir produto com as informações de nome, categoria, preço, descrição
+INSERT INTO produto (nome, categoria, preco, descricao) values ('$nome', '$categoria', '$preco', '$descricao');
+
+// Atualizar as informações nome, categoria, preço, descrição conforme ID
+UPDATE produto SET nome = '$nome', categoria = '$categoria', preco = '$preco', descricao = '$descricao' WHERE id = $id;
+
+// Remover o produto referente ao id
+DELETE FROM produto WHERE id = $id;
+
+// Buscar o produto referente ao id
+SELECT * FROM produto WHERE id = $id;
