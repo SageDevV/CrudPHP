@@ -26,8 +26,6 @@ $result = $result->fetchAll();
       <div class="col-12 col-md-2 col-xl-3">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <a class="nav-link active" id="v-pills-tudo-tab" data-toggle="pill" href="#v-pills-tudo" role="tab" aria-controls="v-pills-tudo" aria-selected="true">Tudo</a>
-          <a class="nav-link" id="v-pills-frutas-tab" data-toggle="pill" href="#v-pills-frutas" role="tab" aria-controls="v-pills-frutas" aria-selected="true">Frutas</a>
-          <a class="nav-link" id="v-pills-verduras-tab" data-toggle="pill" href="#v-pills-verduras" role="tab" aria-controls="v-pills-verduras" aria-selected="false">Verduras</a>
         </div>
       </div>
       <div class="col-12 col-md-10 col-xl-9">

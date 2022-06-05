@@ -43,8 +43,8 @@ $result = $result->fetchAll();
         foreach ($result as $r) {
         ?>
           <tr>
-            <th scope="row"><?php echo $r['id'] ?></th>
-            <td><?php echo $r['nome'] ?></td>
+            <th scope="row"><?php echo $r['id']?></th>
+            <td><?php echo $r['nome']?></td>
             <td><a href="editar_categoria.php?id=<?php echo $r['id'] ?>" class="btn btn-warning">Alterar</a></td>
             <td><a href="remover_categoria.php?id=<?php echo $r['id'] ?>" class="btn btn-danger">Remover</a></td>
           </tr>
